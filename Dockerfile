@@ -1,7 +1,7 @@
 FROM alpine:3.20
 
 # Pakete: curl für HTTP-Pings, docker-cli fürs Inspect, bash für robustes Scripting
-RUN apk add --no-cache curl docker-cli bash
+RUN apk add --no-cache curl:8.14.1-r2 docker-cli bash:5.2.26-r0
 
 # Env-Defaults (können über Compose/.env überschrieben werden)
 ENV HC_INTERVAL=60 \
