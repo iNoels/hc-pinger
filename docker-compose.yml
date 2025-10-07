@@ -1,6 +1,7 @@
 services:
   hc-pinger:
     image: iNoels/hc-pinger:latest
+    container_name: hc-pinger
     restart: unless-stopped
     environment:
       - HC_INTERVAL=60            # Sekunden zwischen Scans

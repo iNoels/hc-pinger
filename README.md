@@ -1,7 +1,7 @@
 # 🩺 hc-pinger
 
-[![Build & Release](https://github.com/<USERNAME>/hc-pinger/actions/workflows/release.yml/badge.svg)](https://github.com/<USERNAME>/hc-pinger/actions/workflows/release.yml)
-[![Docker Pulls](https://img.shields.io/docker/pulls/<USERNAME>/hc-pinger.svg)](https://hub.docker.com/r/<USERNAME>/hc-pinger)
+[![Build & Release](https://github.com/iNoels/hc-pinger/actions/workflows/release.yml/badge.svg)](https://github.com/iNoels/hc-pinger/actions/workflows/release.yml)
+[![Docker Pulls](https://img.shields.io/docker/pulls/inoels/hc-pinger.svg)](https://hub.docker.com/r/inoels/hc-pinger)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 **hc-pinger** ist ein leichtgewichtiger Docker-Sidecar, der automatisch den Health-Status laufender Container überwacht  
