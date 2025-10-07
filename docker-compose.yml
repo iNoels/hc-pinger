@@ -1,0 +1,15 @@
+services:
+  hc-pinger:
+    build:
+      context: ./hc-pinger        # Ordner, in dem Dockerfile & entrypoint.sh liegen
+    image: hc-pinger:latest
+    restart: unless-stopped
+    environment:
+      - HC_INTERVAL=60            # Sekunden zwischen Scans
+      - HC_TIMEOUT=10             # Timeout pro HTTP-Request
+      - HC_RETRY=2                # Curl-Retries
+      - HC_FAIL_ON_UNHEALTH=true  # bei != healthy -> /fail
+      - HC_LABEL=hc.uuid          # Label-Key mit der UUID
+      - HC_LOG_LEVEL=info         # debug|info|warn|error
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
