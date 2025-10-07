@@ -11,8 +11,8 @@ ENV HC_INTERVAL=60 \
     HC_LABEL=hc.uuid \
     HC_LOG_LEVEL=info
 
-WORKDIR /opt/hc-pinger
-COPY entrypoint.sh /opt/hc-pinger/entrypoint.sh
-RUN chmod +x /opt/hc-pinger/entrypoint.sh
+WORKDIR /
+COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
 
-ENTRYPOINT ["/opt/hc-pinger/entrypoint.sh"]
+ENTRYPOINT ["/entrypoint.sh"]

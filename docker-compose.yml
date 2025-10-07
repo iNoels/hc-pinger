@@ -1,8 +1,6 @@
 services:
   hc-pinger:
-    build:
-      context: ./hc-pinger        # Ordner, in dem Dockerfile & entrypoint.sh liegen
-    image: hc-pinger:latest
+    image: iNoels/hc-pinger:latest
     restart: unless-stopped
     environment:
       - HC_INTERVAL=60            # Sekunden zwischen Scans

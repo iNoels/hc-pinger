@@ -76,7 +76,7 @@ jobs:
             type=semver,pattern={{major}},prefix=,enable={{startsWith(github.ref, 'refs/tags/v')}}
             type=sha,format=short,prefix=sha-,enable={{!startsWith(github.ref, 'refs/tags/')}}
 
-      - name: Build (PR: no push / main+tags: push)
+      - name: Build and push Docker image
         uses: docker/build-push-action@v6
         with:
           context: .
